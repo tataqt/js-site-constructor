@@ -4,8 +4,8 @@
   "description": "pure javascript site constructor",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "serve": "webpack-dev-server --mode development"
+    "build": "parcel build ./src/index.html --no-source-maps",
+    "serve": "parcel ./src/index.html -p 3000 --open"
   },
   "keywords": [
     "js",
@@ -17,6 +17,7 @@
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "parcel-bundler": "^1.12.4",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",

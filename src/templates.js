@@ -19,8 +19,8 @@ export function image(block) {
 
 export function textColumns(block) {
     const {styles, tag} = block.options;
-    const html = block.value.map(el => col(`${el}`));
-    return row(html.join(''), styles);
+    const html = block.value.map(col).join('');
+    return row(html, styles);
 }
 
 export const templates = {
